@@ -5,7 +5,7 @@ import { personalInfo } from '../data/personalData';
 const Contact = ({ darkMode, isVisible }) => {
   const handleResumeDownload = () => {
     window.open(
-      'https://1drv.ms/b/c/f21b16ef6b8de949/EXRn5DfVxedLk_LXLnQNvC8BSzAY3mplqjPiGgXoWdMnKA?e=iGX2CaK', 
+      'https://1drv.ms/b/c/f21b16ef6b8de949/EXaoq0l3qL5ItG34RTengTUBPIJ-hpJkRgd2BmLcPlmwOA?e=xbrhxh', 
       '_blank'
     );
   };
