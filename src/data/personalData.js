@@ -1,10 +1,10 @@
 export const personalInfo = {
   title: "AI & ML Enthusiast • Front-End Developer • Problem Solver",
-  photo: '/image/prerna_image.jpg',
+  photo: '/src/assets/prerna_image.jpg',
   name:"Prerna Nebhwani",
   about: {
     intro: "Hello! I'm Prerna Nebhwani, a passionate B.Tech student specializing in Artificial Intelligence and Machine Learning at LNCT Bhopal. I'm deeply fascinated by how AI can transform our world and solve complex real-world problems.",
-    description: "with a strong foundation in C++ and Data Structures & Algorithms 🌱 Passionate about problem-solving, software development, and building innovative web applications. Actively seeking an internship to gain practical experience and contribute to real-world projects 🚀 Quick learner with a constant drive to explore new technologies and keep up with industry trends 📚 "
+    description: "I have a strong foundation in C++ and Data Structures & Algorithms 🌱 Passionate about problem-solving, software development, and building innovative web applications. Actively seeking an internship to gain practical experience and contribute to real-world projects 🚀 Quick learner with a constant drive to explore new technologies and keep up with industry trends 📚 "
   },
   social: {
     github: "https://github.com/PrernaNebhwani",
@@ -12,19 +12,6 @@ export const personalInfo = {
     email: "prernanebhwani@gmail.com"
   }
 };
-
-export const education = [
-  {
-    degree: 'B.Tech in Artificial Intelligence & Machine Learning',
-    institution: 'Lakshmi Narain College Of Technology, Bhopal',
-    year: '2023 - 2027',
-  },
-    {
-    degree: 'PCM',
-    institution: 'Navnidh Hassomal Lakhani Puclic School, Bhopal',
-    year: '2022',
-  }
-];
 
 export const skills = [
   { name: 'C++', icon: 'cpp' },

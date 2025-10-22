@@ -9,13 +9,13 @@ const Hero = ({ darkMode, isVisible, scrollToSection }) => {
         <div className="mb-8 flex justify-center">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 animate-pulse" />
-           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl">
-  <img
-    src={personalInfo.photo} // make sure this is '/images/profile.jpg'
-    alt="Prerna Nebhwani"
-    className="w-full h-full object-cover rounded-full"
-  />
-</div>
+            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+              <img
+                src={personalInfo.photo} // make sure this is '/images/profile.jpg'
+                alt="Prerna Nebhwani"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
 
           </div>
         </div>
@@ -27,11 +27,11 @@ const Hero = ({ darkMode, isVisible, scrollToSection }) => {
           </h1>
           <Sparkles className={`${darkMode ? 'text-pink-400' : 'text-pink-500'} animate-pulse`} size={32} />
         </div>
-        
+
         <p className={`text-xl md:text-2xl ${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-8 font-light`}>
           {personalInfo.title}
         </p>
-        
+
         <div className="flex gap-4 justify-center mb-8 flex-wrap">
           <button
             onClick={() => scrollToSection('projects')}
