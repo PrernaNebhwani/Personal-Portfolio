@@ -1,7 +1,7 @@
 export const personalInfo = {
-  name: "Prerna Nebhwani",
   title: "AI & ML Enthusiast • Front-End Developer • Problem Solver",
-  photo: "https://via.placeholder.com/300x300/e9d5ff/9333ea?text=Prerna",
+  photo: '/image/prerna_image.jpg',
+  name:"Prerna Nebhwani",
   about: {
     intro: "Hello! I'm Prerna Nebhwani, a passionate B.Tech student specializing in Artificial Intelligence and Machine Learning at LNCT Bhopal. I'm deeply fascinated by how AI can transform our world and solve complex real-world problems.",
     description: "with a strong foundation in C++ and Data Structures & Algorithms 🌱 Passionate about problem-solving, software development, and building innovative web applications. Actively seeking an internship to gain practical experience and contribute to real-world projects 🚀 Quick learner with a constant drive to explore new technologies and keep up with industry trends 📚 "
