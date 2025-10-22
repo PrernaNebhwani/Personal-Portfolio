@@ -1,6 +1,7 @@
+import pfp from '/src/assets/prerna_image.jpg'
 export const personalInfo = {
   title: "AI & ML Enthusiast • Front-End Developer • Problem Solver",
-  photo: '/src/assets/prerna_image.jpg',
+  photo: pfp,
   name:"Prerna Nebhwani",
   about: {
     intro: "Hello! I'm Prerna Nebhwani, a passionate B.Tech student specializing in Artificial Intelligence and Machine Learning at LNCT Bhopal. I'm deeply fascinated by how AI can transform our world and solve complex real-world problems.",
