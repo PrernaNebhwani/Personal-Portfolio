@@ -6,6 +6,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   const toggleDropdown = () => setIsMenuOpen(!isMenuOpen);
 
+  // 🔗 Replace this with your real OneDrive resume link
+  const resumeLink = "https://1drv.ms/b/c/f21b16ef6b8de949/EXaoq0l3qL5ItG34RTengTUBPIJ-hpJkRgd2BmLcPlmwOA?e=xbrhxh";
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 backdrop-blur-lg shadow-sm ${
@@ -54,7 +57,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
-          {/* Dropdown Menu (Hamburger) */}
+          {/* Dropdown Menu*/}
           <div className="relative">
             <button
               onClick={toggleDropdown}
@@ -74,28 +77,50 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   ? "opacity-100 translate-y-0 visible"
                   : "opacity-0 -translate-y-2 invisible"
               } ${
-                darkMode ? "bg-gray-800/90 text-gray-200" : "bg-white/90 text-gray-800"
+                darkMode
+                  ? "bg-gray-800/90 text-gray-200"
+                  : "bg-white/90 text-gray-800"
               }`}
             >
               <ul className="flex flex-col py-3 px-2">
-                {[
-                  { name: "Skills", href: "#skills" },
-                  { name: "Projects", href: "#projects" },
-                  { name: "Resume", href: "#resume" },
-                ].map((item, index) => (
-                  <li key={index}>
-                    <a
-                      href={item.href}
-                      className={`block px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
-                        darkMode
-                          ? "hover:bg-purple-600/30 hover:text-purple-300"
-                          : "hover:bg-purple-100 hover:text-purple-700"
-                      }`}
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <a
+                    href="#skills"
+                    className={`block px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                      darkMode
+                        ? "hover:bg-purple-600/30 hover:text-purple-300"
+                        : "hover:bg-purple-100 hover:text-purple-700"
+                    }`}
+                  >
+                    Skills
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#projects"
+                    className={`block px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                      darkMode
+                        ? "hover:bg-purple-600/30 hover:text-purple-300"
+                        : "hover:bg-purple-100 hover:text-purple-700"
+                    }`}
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <button
+                    onClick={() =>
+                      window.open(resumeLink, "_blank", "noopener,noreferrer")
+                    }
+                    className={`w-full text-left block px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                      darkMode
+                        ? "hover:bg-purple-600/30 hover:text-purple-300"
+                        : "hover:bg-purple-100 hover:text-purple-700"
+                    }`}
+                  >
+                    Resume
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
