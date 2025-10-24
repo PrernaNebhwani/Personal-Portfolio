@@ -6,8 +6,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   const toggleDropdown = () => setIsMenuOpen(!isMenuOpen);
 
-  // 🔗 Replace this with your real OneDrive resume link
-  const resumeLink = "https://1drv.ms/b/c/f21b16ef6b8de949/EXaoq0l3qL5ItG34RTengTUBPIJ-hpJkRgd2BmLcPlmwOA?e=xbrhxh";
+  const resumeLink = "https://1drv.ms/b/c/f21b16ef6b8de949/EQA76wPYwUJDtvlvoXSOl2wBabNlfUE08z7YH6GRsZl44g?e=rfIeLs";
 
   return (
     <nav
